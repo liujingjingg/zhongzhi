@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中智首页</title>
+	<style>
+	*{
+		padding: 0;
+		margin:0; 
+	}
+	.clearfix:after{
+		content: "";
+		height: 0;
+		display: block;
+		clear: both;
+	}
+	ul,li,ol{
+		list-style:none; 
+	}
+	a{
+		text-decoration: none;
+	}
+    .heard{
+        height: 173px;
+        background-color: #eeeeef;
+    }
+    .logo{
+    	text-align:center;
+    	height: 125px;
+    }
+    .logo img{
+    	margin-top:30px; 
+    	margin-bottom: 25px;
+    }
+    .nav{
+    	width: 670px;
+    	height: 45px;
+    	background-color: #fff;
+    	margin: 0 auto;
+    	border-radius: 23px;
+    }
+    .nav li{
+    	float: left;
+    	height:45px;
+    	padding: 0 25px;
+    	line-height: 45px;
+    	background: url('web pic/shu.png') no-repeat right center;
+    }
+    .nav li a:hover{
+    	display: block;
+    	height: 42px;
+    	color:#1e50ae;
+    	border-bottom: 3px solid #1e50ae; 
+    }
+    .nav li:last-child{
+    	background: none;
+    }
+    .ban{
+    	width: 100%;
+    	height: 405px;
+    	background: url('web pic/peo.png') no-repeat center center;
+    }
+    .o{
+    	display: block;
+    	height: 42px;
+    	border-bottom: 3px solid #1e50ae;
+    }
+    .serve{
+    	width: 1200px;
+    	height: 130px;
+    	margin: 0 auto;
+    	background: #ffffff;
+
+    }
+    .a1{
+    	font-size: 34px;
+	    margin-top: 61px;
+	    font-weight: normal;
+	    text-align: center;
+    }
+    .a2{
+    	font-size: 28px;
+	    margin-top: 10px;
+	    text-align: center;
+	    font-color:#414141;
+    }
+    div.top{
+    	width: 1200px;
+    	height: 372px;
+    	padding-left: 100px;
+    	float: left;
+    }
+    div.parent>div{
+    	float: left;
+    }
+    .top1{
+    	width: 300px;
+	    height: 420px;
+	    padding-left: 150px;
+    }
+    .top1 p{
+    	padding-left: 40px;
+	    font-size: 16px;
+	    margin-top: 20px;
+    }
+	.top1 li{
+		margin-top: 16px;
+	    margin-left: 35px;
+	    font-size: 14px;
+	    color: #909090;
+	}
+	.top2{
+		width: 300px;
+	    height: 420px;
+	}
+	.top2 p{
+		padding-left: 40px;
+	    font-size: 16px;
+	    margin-top: 20px;
+	}
+	.top2 li{
+		margin-top: 16px;
+	    margin-left: 35px;
+	    font-size: 14px;
+	    color: #909090;
+	}
+	.top3{
+		width: 300px;
+	    height: 420px;
+	}
+	.top3 p{
+		padding-left: 40px;
+	    font-size: 16px;
+	    margin-top: 20px;
+	}
+	.top3 li{
+		margin-top: 16px;
+	    margin-left: 35px;
+	    font-size: 14px;
+	    color: #909090;
+	}
+	.top4 p{
+        padding-left: 40px;
+	    font-size: 16px;
+	    margin-top: 20px;
+	}
+	.top4 li{
+		margin-top: 16px;
+	    margin-left: 35px;
+	    font-size: 14px;
+	    color: #909090;
+	}
+	div.bottom>div{
+		float: left;
+	}
+	.bottom1{
+		width: 300px;
+	    height: 248px;
+	    padding-left: 150px;
+	}
+	.bottom1 p{
+		padding-left: 15px;
+	    font-size: 16px;
+	    margin-top: 20px;
+	}
+    .bottom2{
+    	width: 300px;
+	    height: 248px;
+    }
+    .bottom2 p{
+    	padding-left: 35px;
+	    font-size: 16px;
+	    margin-top: 20px;
+    }
+    .bottom3{
+    	width: 300px;
+	    height: 248px;
+    }
+    .bottom3 p{
+    	padding-left: 25px;
+	    font-size: 16px;
+	    margin-top: 20px;
+    }
+    .bottom4 p{
+        padding-left: 35px;
+	    font-size: 16px;
+	    margin-top: 20px;
+    }
+    .back h3{
+    	font-size: 34px;
+    	text-align: center;
+    	padding-top: 64px;
+    	margin-bottom:10px; 
+        color:#ffffff; 
+    }
+    .back p{
+    	text-align: center;
+    	text-transform: uppercase;
+    	padding-bottom: 70px;
+    	color: #fff;
+    	font-size: 18px;
+    }
+    div.back{
+    	background: url('web pic/back1.png') no-repeat center;
+    	height: 712px;
+    	width: 100%;
+    	text-align:center; 
+    }
+    .back ul{
+    	width: 1076px;
+    	margin: 0 auto;
+    }
+    .back li{
+    	float: left;
+    	margin-right: 50px;
+    }
+    .back li.last{
+    	margin-right: 0;
+    }
+    .back button{
+    	width: 230px;
+    	height: 50px;
+    	text-align: center;
+    	line-height: 50px;
+    	color: #fff;
+    	border:2px solid #fff;
+    	border-radius: 25px; 
+    	margin-top: 80px;
+    	background: transparent;/*透明*/
+    }
+    div.center{
+    	height: 184px;
+    	width: 100%;
+    	text-align:center;
+    }
+    .center h3{
+    	font-size: 34px;
+    	text-align: center;
+    	padding-top: 64px;
+    	margin-bottom:10px; 
+        color:#333333; 
+    }
+    .center p{
+    	text-align: center;
+    	text-transform: uppercase;
+    	padding-bottom: 70px;
+    	color: #333333;
+    	font-size: 18px;
+    }
+    div.infortop div{
+    	float: left;
+    }
+    .infortop1{
+    	padding-left: 72px;
+    }
+    .pic{
+    	padding-left: 100px;
+    }
+    .one{
+    	padding-top: 45px;
+    	margin-right: 419px;
+	    line-height: 55px;
+	    color: #333333;
+    }
+    .two{
+    	margin-right: 264px;
+	    margin-bottom: 25px;
+	    color: #333333;
+    }
+    .three{
+    	margin-right: 72px;
+    	color: #969696;
+    	padding-bottom: 18px; 
+    }
+    .five{
+    	margin-right: 72px;
+    	color: #969696;
+    }
+    .four{
+    	width: 137px;
+    	height: 40px;
+    	text-align: center;
+    	line-height: 20px;
+    	color: #1141a3;
+    	border:2px solid #1141a3;
+    	border-radius: 20px; 
+    	margin-top: 34px;
+    	background: transparent;
+    }
+    div.inforbottom div{
+    	float: left;
+    	padding-bottom: 83px;
+    }
+    .inforbottom1{
+    	color: #969696;
+    	padding-left: 100px;
+    }
+    .inforbottom2{
+    	color: #969696;
+    	padding-left: 35px;
+    }
+    .renzheng{
+        height: 100px;
+        background-color: #eeeeef;
+    }
+    div.renzheng div{
+    	float: left;
+    }
+    .l1{
+    	padding-left: 100px;
+    	padding-top: 27px;
+    }
+    .l{
+    	padding-left: 30px;
+    	padding-top: 27px;
+    }
+    .renzheng div>h4{
+    	color:#5a5a5a;
+    	padding-left:23px;
+    	padding-top: 27px; 
+    }
+    .renzheng div>p{
+    	color:#5a5a5a;
+    	padding-left:23px;
+    	padding-top: 10px;
+    }
+    .i{
+    	padding-left:23px;
+    	padding-top: 30px;
+    }
+    div.weixin{
+    	width: 100%;
+    	height: 262px;
+        background-color: #323232;
+    }
+    div.weixin>div{
+    	float: left;
+    }
+    .bottomline1{
+    	padding-left: 100px;
+    }
+    .j{
+    	padding-top:70px; 
+    	font-size: 18px;
+    	color: #fff;
+    	padding-bottom: 15px;
+    }
+    .bottomline{
+    	padding-bottom: 24px;
+    	font-size: 14px;
+    	color: #fff; 
+    }
+    .bottomline2{
+    	padding-top: 70px;
+    	padding-left:100px; 
+    }
+    .bottomline3{
+    	padding-left: 35px;
+    	padding-top: 70px;
+    }
+    .bottomline3 li p{
+    	color: #fff; 
+    }
+    .zhongline{
+    	width: 100%;
+    	height: 1px;
+    	color: #fff;
+    }
+    .zuihou{
+    	height: 124px;
+    	width: 100%;
+    	background-color:#323232; 
+    	padding-left: 150px;
+    }
+    .nav2 li{
+    	float: left;
+    	height:45px;
+    	padding: 35px 25px;
+    	line-height: 45px;
+    	background: url('web pic/shu.png') no-repeat right center;
+    }
+    .nav2 li a{
+    	color: #fff;
+    }
+    .nav2 li:last-child{
+    	background: none;
+    }
+    </style>
+</head>
+<body>
+	<div class="heard">
+        <div class="logo">
+            <img src="web pic/logo.png" alt="">
+            <ul class="nav">
+               <li><a href="" class="o">首页</a></li>
+               <li><a href="">关于我们</a></li>
+               <li><a href="">中智服务</a></li>
+               <li><a href="">解决方案 </a></li>
+               <li><a href="">最新资讯</a></li>
+               <li class="last"><a href="">联系我们</a></li>
+            </ul>
+        </div>
+	</div>
+	<div class="ban"></div>
+	<div class="serve">
+        <h3 class="a1">服务项目</h3>
+        <p class="a2">SERVICE ITEMS</p>
+    </div>
+    <div class="parent clearfix">
+        <div  class="top1">
+        	<img src="web pic/tu1.png" alt="">
+        	<p>工商代理</p>
+        	<ul>
+					<li><img src="web pic/point.png" alt="">公司注册</li>
+					<li><img src="web pic/point.png" alt="">公司注册地址</li>
+					<li><img src="web pic/point.png" alt="">分公司注册</li>
+					<li><img src="web pic/point.png" alt="">外资注册</li>
+					<li><img src="web pic/point.png" alt="">股权变更</li>
+					<li><img src="web pic/point.png" alt="">公司注销</li>
+				</ul>
+        </div>
+        <div class="top2">
+        	<img src="web pic/tu2.png" alt="">
+        	<p>财务管理</p>
+        	<ul>
+					<li><img src="web pic/point.png" alt="">代理记账</li>
+					<li><img src="web pic/point.png" alt="">税务筹划</li>
+					<li><img src="web pic/point.png" alt="">审计服务</li>
+				</ul>
+       	</div>
+       	<div class="top3">
+            <img src="web pic/tu3.png" alt="">
+            <p>资质服务</p>
+            <ul>
+					<li><img src="web pic/point.png" alt="">各类许可证</li>
+					<li><img src="web pic/point.png" alt="">资质审批</li>
+					<li><img src="web pic/point.png" alt="">高新企业</li>
+					<li><img src="web pic/point.png" alt="">商标专利</li>
+				</ul>
+       	</div>
+       	<div class="top4">
+            <img src="web pic/tu4.png" alt="">
+            <p>特色服务</p>
+            <ul>
+            	<li><img src="web pic/point.png " alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class=	"bottom clearfix">
+         <div class="bottom1">
+           <img src="web pic/tu5.png" alt="">
+           <p>公积金社保代理</p>
+         </div>
+         <div class="bottom2">
+           <img src="web pic/tu6.png" alt="">
+           <p>办公室租赁</p>
+         </div>
+         <div class="bottom3">
+           <img src="web pic/tu7.png" alt="">
+           <p>营业执照转让</p>
+         </div>
+         <div class="bottom4">
+           <img src="web pic/tu8.png" alt="">
+           <p>法律服务</p>
+         </div>
+    </div>
+    <div class="back">
+    	<h3>解决方案</h3>
+    	<p>solution</p>
+    	<ul class="clearfix">
+    		<li><a href=""><img src="web pic/back2.png" alt=""></a></li>
+    		<li><a href=""><img src="web pic/back3.png" alt=""></a></li>
+    		<li><a href=""><img src="web pic/back4.png" alt=""></a></li>
+    		<li class="last"><a href=""><img src="web pic/back5.png" alt=""></a></li>
+    	</ul>
+    	<button>了解更多>></button>
+    </div>
+    <div class="center">
+        <h3>最新资讯</h3>
+        <p>latest information</p>
+    </div>
+    <div class="infortop clearfix">
+        	<div class="pic">
+        	<img src="web pic/hua.png" alt="">
+            </div>
+			<div class="infortop1">
+			<ul>
+				<li class="one"><h4>交易明智＆方便</h4></li>
+				<li class="two"><h5>TRANSACTION WISE＆CONVENIENT</h5></li>
+				<li class="three"><p>要适应快速发展的差价合约市场，客户需要一个能让他们不用经纪商的介入就能分</p></li>
+				<li class="three"><p>析实时报价、进行实时交易以及应用投资策略的平台。他们需要一个简单便捷的界</p></li>
+				<li class="five"><p>面来管理他们的账户，并能轻松查看土鳖和报告。</p></li>
+				<li><button class="four">了解详情</button></li>
+			</ul>
+			</div>
+        </div>
+        <div class="inforbottom clearfix">
+			<div class="inforbottom1">
+			<ul>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+			</ul>
+			</div>
+			<div class="inforbottom2">
+			<ul>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+				<li><img src="web pic/nh.png"></li>
+				<li><p>为什么企业上市之路更加艰难？前期工作有哪些问题，不少企业卡在财务问题上...</p></li>
+			</ul>
+			</div>
+    </div>
+    <div class="renzheng clearfix">
+        <div class="l1" ><img src="web pic/ren1.png" alt="">
+        </div>
+        <div>
+              <h4>资质认证</h4>
+              <p>服务商100%实名认证</p></div>
+         <div class="i"><img src="web pic/ren5.png" alt=""></div>
+        <div class="l"><img src="web pic/ren2.png" alt="">  
+        </div>
+        <div>
+        	<h4>支付安全</h4>
+        	<p>明码标价支付及信息安全</p>
+        </div>
+        <div class="i"><img src="web pic/ren5.png" alt=""></div>
+        <div class="l"><img src="web pic/ren3.png" alt="">
+        </div>
+        <div>
+        	<h4>保险赔付</h4>
+        	<p>为您提供担保赔付</p>
+        </div>
+        <div class="i"><img src="web pic/ren5.png" alt=""></div>
+        <div class="l"><img src="web pic/ren4.png" alt="">
+        </div>
+        <div>
+             <h4>售后无忧</h4>
+             <p>服务问题经理全程跟进</p>
+        </div>
+    </div>
+    <div class="weixin clearfix">
+        <div class="bottomline1">
+        	          <ul>
+						<li><p class="j">中智信元</p></li>
+						<li><a href="" class="bottomline">加入我们</a></li>
+						<li><a href="" class="bottomline">联系我们</a></li>
+						<li><a href="" class="bottomline">最新动态</a></li>
+			        </ul>
+        </div>
+        <div class="bottomline1">
+            <ul>
+						<li><p class="j">订单服务</p></li>
+						<li><a href="" class="bottomline">支付方式</a></li>
+						<li><a href="" class="bottomline">退款说明</a></li>
+						<li><a href="" class="bottomline">购买流程</a></li>
+					</ul>
+        </div>
+        <div class="bottomline1">
+        	<ul>
+						<li><p class="j">售后服务</p></li>
+						<li><a href="" class="bottomline">在线问答</a></li>
+						<li><a href="" class="bottomline">服务中心</a></li>
+						<li><a href="" class="bottomline">售后政策</a></li>
+					</ul>
+        </div>
+        <div class="bottomline1">
+        	<ul>
+						<li><p class="j">常见问题</p></li>
+						<li><a href="" class="bottomline">新手帮助</a></li>
+						<li><a href="" class="bottomline">支付帮助</a></li>
+						<li><a href="" class="bottomline">开具发票</a></li>
+			</ul>
+        </div>
+        <div class="bottomline2">
+        	<img src="web pic/wechat.png" alt="">
+        </div>
+		<div class="bottomline3">
+					<ul>
+						<li><p>微</p></li>
+						<li><p>信</p></li>
+						<li><p>扫</p></li>
+						<li><p>一</p></li>
+						<li><p>扫</p></li>
+					</ul>
+		</div>
+		<div class="bottomline3">
+			<img src="web pic/n.png" alt=""></div>
+		<div class="bottomline3">
+			<img src="web pic/lian.png" alt="">
+		</div>
+    </div>
+    <div class="zhongline"></div>
+    <div class="zuihou clearfix">
+    	<ul class="nav2">
+               <li class="q"><a href="" >首页</a></li>
+               <li><a href="">工商管理</a></li>
+               <li><a href="">财务代记账</a></li>
+               <li><a href="">股权交易与变更 </a></li>
+               <li><a href="">企业贷款</a></li>
+               <li ><a href="">办公室租赁</a></li>
+               <li><a href="">社保公积金代理</a></li>
+               <li><a href="" class="last2">法律服务</a></li>
+            </ul>
+    </div>
+</body>
+</html>
